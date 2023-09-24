@@ -30,9 +30,34 @@ html.body{
     border-radius: 3px;
 }
 
-.innerbox:first-child{
-    transform: translateX(50vw);
+.innerbox{
+    position: relative;
 }
-.innerbox:nth-child(2){
-    transform: translateX(-50vw);
+.innerbox:nth-child(odd){
+    animation: oddd .4s linear ;
+    animation-direction: alternate;
+    animation-fill-mode: backwards;
+}
+.innerbox:nth-child(even){
+    animation: even .4s linear ;
+    animation-direction: alternate;
+    animation-fill-mode: backwards;
+}
+
+@keyframes oddd{
+    from{
+        right: 100%;
+    }
+    to{
+        right: 0;
+    }
+}
+
+@keyframes even{
+    from{
+        left: 100%;
+    }
+    to{
+        left: 0;
+    }
 }
