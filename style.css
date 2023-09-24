@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html.body{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.innerbox{
+    width: 80px;
+    height: 40px;
+    padding: 10px 15px;
+    background-color: blue;
+    border: 1px solid black;
+    margin: 5px 0;
+    border-radius: 3px;
+}
+
+.innerbox:first-child{
+    transform: translateX(50vw);
+}
+.innerbox:nth-child(2){
+    transform: translateX(-50vw);
+}
