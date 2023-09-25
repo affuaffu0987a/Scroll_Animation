@@ -8,10 +8,14 @@ html.body{
     width: 100%;
     height: 100%;
 }
+/* 
+body::-webkit-scrollbar{
+    display: none;
+} */
 
 .main{
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -19,7 +23,6 @@ html.body{
     align-items: center;
     overflow: hidden;
 }
-
 .innerbox{
     width: 80px;
     height: 40px;
@@ -37,11 +40,18 @@ html.body{
     animation: oddd .4s linear ;
     animation-direction: alternate;
     animation-fill-mode: backwards;
+    animation-delay: .7s;
 }
 .innerbox:nth-child(even){
     animation: even .4s linear ;
     animation-direction: alternate;
     animation-fill-mode: backwards;
+    animation-delay: .7s;
+}
+
+.lastDiv{
+    position: relative;
+    right: 100%;
 }
 
 @keyframes oddd{
