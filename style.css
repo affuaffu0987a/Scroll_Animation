@@ -28,7 +28,7 @@ body::-webkit-scrollbar{
     height: 40px;
     padding: 10px 15px;
     background-color: blue;
-    border: 1px solid black;
+    box-shadow: 0 0 6px whitesmoke;
     margin: 5px 0;
     border-radius: 3px;
 }
@@ -49,9 +49,18 @@ body::-webkit-scrollbar{
     animation-delay: .7s;
 }
 
-.lastDiv{
+.lastbox{
     position: relative;
-    right: 100%;
+    width: 80px;
+    height: 40px;
+    padding: 10px 15px;
+    background-color: red;
+    color: whitesmoke;
+    margin: 5px 0;
+    box-shadow: 0 0 6px whitesmoke;
+    border-radius: 3px;
+    right: 0;
+    transition: right linear .4s;
 }
 
 @keyframes oddd{
